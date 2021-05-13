@@ -200,7 +200,7 @@ function tablaDelSeis(){
   //Escribe tu código aquí 
   var tabla=[];
 
-  for (i=0; i<=60; i++){
+  for (i=0; i<=10; i++){
     tabla.push(6*i);
   }
   return tabla;  
@@ -210,9 +210,10 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if(numero.length ===3){
+  if(numero.toString().length == 3){
     return true;
   }
+  return false;
   
   
 }
@@ -221,11 +222,11 @@ function doWhile(numconsero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  let numconsero;
+let i=0;
   do {
     numconsero = numconsero + 5;
-  } while (i < 8);
-
+    i++;
+  } while ( i < 8);
   return numconsero;
 }
 
